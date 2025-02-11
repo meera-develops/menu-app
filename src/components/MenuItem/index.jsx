@@ -9,6 +9,7 @@ return(
           <p>${item.itemPrice}</p>
           <h1>{item.itemName}</h1>
           <p>{item.itemDescription}</p>
+          <button>Add to Cart</button>
        </div>
 );
 }
