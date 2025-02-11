@@ -1,12 +1,14 @@
 import React from "react"
 
-//we will pass an object and assign it to the items prop here later 
+//we will pass an object and assign it to the item prop here later 
 //now i need to figure out how to map correctly 
 
-const MenuItem = ({items = { itemName: "default value"} }) => {
+const MenuItem = ({item }) => {
 return(
        <div>
-          <h1>{items.itemName}</h1>
+          <p>${item.itemPrice}</p>
+          <h1>{item.itemName}</h1>
+          <p>{item.itemDescription}</p>
        </div>
 );
 }
