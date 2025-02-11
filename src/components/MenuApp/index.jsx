@@ -7,10 +7,13 @@ const MenuApp = ({ data }) => {
     console.log("data I have: ", data);
   return (
     <div className="App">
-      <Menu
-        menuName="Breakfast"
-        menuItems={data}
-      ></Menu>
+      {data.map((menu, index) => (
+        <Menu
+        key = {index}
+        menuName = {menu.menuName}
+        menuItems = {menu.menuItems}
+        />
+      ))}
     </div>
   )
 }
